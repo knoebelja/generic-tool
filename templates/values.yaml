@@ -1,6 +1,6 @@
-name: value
-number: 1
 array:
     - value
 object:
-    name: value
+    number: 1
+name: value
+number: 1
