@@ -8,6 +8,7 @@ require (
 	github.com/mitchellh/go-homedir v1.1.0
 	github.com/spf13/cobra v1.0.0
 	github.com/spf13/viper v1.6.3
+	github.com/sqs/goreturns v0.0.0-20181028201513-538ac6014518 // indirect
 	gopkg.in/dixonwille/wlog.v2 v2.0.0 // indirect
 	gopkg.in/yaml.v2 v2.2.4
 )
