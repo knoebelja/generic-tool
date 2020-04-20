@@ -28,7 +28,7 @@ func askHint(question string, hints []string) (answer string) {
 	switch len(hints) {
 	case 0:
 	case 1:
-		question = question + "(hint: " + hints[0] + ")"
+		question = question + " (hint: " + hints[0] + ")"
 	default:
 		question = question + " (hint: " + strings.Join(hints, ", ") + ", etc.)"
 	}

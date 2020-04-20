@@ -12,7 +12,7 @@ func readYAML(filepath string, v interface{}) {
 	data, err := ioutil.ReadFile(filepath)
 	check(err, "reading JSON from %s", filepath)
 
-	err = yaml.Unmarshal(data, &v)
+	err = yaml.Unmarshal(data, v)
 	check(err, "storing %s in %+v", string(data), v)
 }
 

@@ -7,12 +7,12 @@ import (
 )
 
 type registration struct {
-	Name      string  `json:"name"`
-	Age       float64 `json:"age"`
-	Boy       bool    `json:"boy"`
-	Sport     string  `json:"sport"`
-	GPA       float64 `json:"gpa"`
-	Volunteer string  `json:"volunteer"`
+	Name      string  `json:"name" yaml:"name"`
+	Age       float64 `json:"age" yaml:"age"`
+	Boy       bool    `json:"boy" yaml:"boy"`
+	Sport     string  `json:"sport" yaml:"sport"`
+	GPA       float64 `json:"gpa" yaml:"gpa"`
+	Volunteer string  `json:"volunteer" yaml:"volunteer"`
 }
 
 // New asks a question
@@ -38,7 +38,7 @@ func New(cmd *cobra.Command, opts []string) {
 	form.Age = age
 	form.GPA = gpa
 
-	writeYAML(name+".yaml", form)
+	writeYAML(name+".yaml", &form)
 
 	fmt.Println("Thank you for submission")
 
